@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./vendors/css/normalize.css">
+    <link rel="stylesheet" href="./vendors/css/homework1.css">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>入力フォーム課題</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header clearfix">
+        <a href="#">
+          <img src="./vendors/images/logo.png" alt="logo" class="logo_image">
+        </a>
+        <nav>
+          <ul class="top_menu clearfix">
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">事業内容</a></li>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <img src="./vendors/images/contact.png" alt="info" class="contact_image">
+      <div class="wrapper clearfix">
+        <aside class="side_menu">
+          <nav>
+            <ul>
+              <li><a href="#">事業内容</a></li>
+              <li><a href="#">会社概要</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <form class="form">
+          <table>
+            <form class="form" action="index.html" method="post">
+              <tr>
+                <th>お名前</th>
+                <td><input type="text" class="form_box"></td>
+              </tr>
+              <tr>
+                <th>メールアドレス</th>
+                <td><input type="email" class="form_box"></td>
+              </tr>
+              <tr>
+                <th>性別</th>
+                <td>
+                  <input type="radio" name="sex">男
+                  <input type="radio" name="sex">女
+                </td>
+              </tr>
+              <tr>
+                <th>お問い合せ内容</th>
+                <td><textarea rows="3" cols="80"  class="form_box"></textarea></td>
+              </tr>
+              <tr>
+                <th colspan="2"><input type="submit" class="submit"></th>
+              </tr>
+            </form>
+          </table>
+        </form>
+        </div>
+      <footer class="footer">
+        <p>Copyright @ 2018 DIVE INTO CODE All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
