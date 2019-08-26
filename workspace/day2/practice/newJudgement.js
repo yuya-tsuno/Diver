@@ -30,10 +30,10 @@ function get_achivement(points) {
 }
 
 function get_pass_or_failure(points) {
-  let judge = "おめでとう！合格！";
+  let judge = "おめでとう！合格！昨日の自分を超えたな。";
   for (let i=0; i<number; i++) {
     if (points[i]<60) {
-      judge = "不合格! なんで取れなかったか明日までに考えといてください。";
+      judge = "全然アカンわ。不合格! なんで取れなかったか明日までに考えといてください。";
       break;
     }
   }
@@ -45,7 +45,7 @@ function judgement(points) {
   let average = get_average(points);
   let achivement = get_achivement(points);
   let pass_or_failure = get_pass_or_failure(points);
-  return `全教科の合計点数は${sum}点、平均は${average}点。よって君の成績は${achivement}。${pass_or_failure}`;
+  return `全教科の合計点数は500点中の${sum}点、各教科の平均は${average}点。よって君の成績は${achivement}。${pass_or_failure}`;
 }
 
 let points = [60,50,60,40,30,0];
