@@ -1,0 +1,21 @@
+① $(document).ready(function(){ ~ });
+HTMLのdocumentを読み終えたら以下のfunctionを実行する
+
+② $('#btn-evaluation').click(function() { ~ });
+#btn-evaluation（評価ボタンid）がクリックされたとき、以下のfunctionを実行する
+
+③ $('#national_language, #english, #mathematics, #science, #society').change(function() { ~ });
+#national_language, #english, #mathematics, #science, #societyのいずれかが変更されたとき、
+以下のfunctionを実行する
+
+④ $('#national_language').val()
+#national_languageのvalue属性を引用する
+
+⑤ Number()
+各キーの名称
+
+⑥ $("#sum_indicate").text(sum);
+変数sumを#sum_indicateのテキストに代入する
+
+⑦ .append
+指定した要素内部の最後にHTMLを挿入する
