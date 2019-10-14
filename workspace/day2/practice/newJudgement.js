@@ -18,11 +18,11 @@ function get_achivement(points) {
   for (let i=0; i<number; i++) {
     sum += points[i];
   }
-  if (sum >= 100*0.8) {
+  if (sum >= 100*number*0.8) {
     return "A";
-  } else if (sum >= 100*0.6) {
+  } else if (sum >= 100*number*0.6) {
     return "B";
-  } else if (sum >= 100*0.4) {
+  } else if (sum >= 100*number*0.4) {
     return "C";
   } else {
     return "D";
