@@ -4,7 +4,18 @@ class Player
   def hand
     # コンソールを入力待ち状態にし、プレイヤーがコンソールから打ち込んだ値を出力する処理のメソッドの処理をこの中に作成する
     puts("数字を入力してください。\n0: グー\n1: チョキ\n2: パー")
-    player_hand = gets.to_i
+    input_hand = nil
+
+    while true
+      input_hand = gets.chomp
+      if input_hand =~ /^[0-9]+$/
+        break
+      else
+        puts "よく見て。文字ではなく数字を入力してください。\n0: グー\n1: チョキ\n2: パー"
+      end
+    end
+
+    player_hand = input_hand.to_i
     return player_hand
   end
 end
@@ -18,6 +29,7 @@ class Enemy
 end
 
 class Janken
+
   def pon(player_hand, enemy_hand)
     # プレイヤーが打ち込んだ値と、Enemyがランダムに出した値でじゃんけんをさせ、その結果をコンソール上に出力するメソッドをこの中に作成する
     # その際、あいこもしくはグー、チョキ、パー以外の値入力時には、もう一度ジャンケンをする
